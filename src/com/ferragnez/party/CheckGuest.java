@@ -15,13 +15,15 @@ public class CheckGuest {
 			 
 			 System.out.println(cercaNome);
 			 
+			 cercaNome = cercaNome.toLowerCase();
+			 
 			for(int i = 0 ; i < nomi.length ; i++){
 				
-				if(cercaNome == nomi[i]) {
+				if(cercaNome.equals(nomi[i])) {
 					
 					System.out.print("L'invitato puo entrare alla festa dei Ferragnez siuuum");
 					
-				}else if(i == i-1){
+				}else if(i == nomi.length - 1){
 					System.out.print("L'invitato non e ben accetto alla festa");
 				}
 			}
